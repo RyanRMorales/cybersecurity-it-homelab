@@ -14,20 +14,31 @@ I use this environment to simulate security events, investigate system and netwo
 
 ## Lab Environment
 
-| System | Role | Configuration |
+| Virtual Machine | Operating System | Role / Services |
 |---|---|---|
-| **DC01** | Domain Controller / SIEM Server | Windows Server 2025, Active Directory Domain Services, DNS, Splunk Enterprise |
-| **WS01** | Domain Workstation / Monitored Endpoint | Windows, Splunk Universal Forwarder, Sysmon |
-| **KALI01** | Security Testing System | Kali Linux, Nmap and other security testing tools |
+| **DC01** | Windows Server 2025 | Active Directory Domain Services (AD DS), DNS, Splunk Enterprise (SIEM) |
+| **WS01** | Windows 10 Pro | Domain-joined workstation, Sysmon, Splunk Universal Forwarder |
+| **KALI01** | Kali Linux | Security testing, network reconnaissance, authentication testing, connectivity validation |
+| **VULN01** | Metasploitable2 (Legacy Linux) | Simulated legacy server, intentionally vulnerable assessment target | 
+| **SCAN01** | Ubuntu Desktop 24.04 LTS | Greenbone/OpenVAS vulnerability scanning and assessment | 
+|**HELP01** | Ubuntu Server 26.04.1 LTS | osTicket service desk, ticket management, IT support simulation | 
 
 ### Network
 
-The lab operates on an isolated virtual network using the `192.168.100.0/24` private address space.
+The homelab operates on an isolated Oracle VirtualBox internal network named CyberLab, using the `192.168.100.0/24` private subnet. This configuration allows virtual machines to communicate within the simulated enterprise environment while remaining isolated from the physical local network.
 
-- **DC01:** `192.168.100.10`
-- **WS01:** `192.168.100.20`
-- **KALI01:** `192.168.100.30`
-- **Domain:** `home.local`
+| Virtual Machine | IP Address |
+|---|---|
+| **DC01** | `192.168.100.10` |
+| **WS01** | `192.168.100.20` |
+| **KALI01** | `192.168.100.30` |
+| **VULN01** | `192.168.100.40` |
+| **SCAN01** | `192.168.100.50` |
+| **HELP01** | `192.168.100.60` | 
+
+**Active Directory Domain:** `home.local` (Hosted on DC01; WS01 is domain-joined)
+
+Selected virtual machines also use secondary NAT network adapters to access the internet for software installation, updates, and dependency management. Internal lab communication remains on the CyberLab network.
 
  ## Security Monitoring
 
