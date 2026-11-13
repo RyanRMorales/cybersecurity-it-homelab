@@ -1,12 +1,12 @@
-# Active Directory & Splunk SOC Homelab
+# Cybersecurity & IT Infrastructure Homelab
 
 ## Overview
 
-This project documents the development of my virtual cybersecurity homelab used to practice SOC monitoring, security investigation, and detection engineering.
+This repository documents the development and expansion of my virtual cybersecurity and IT infrastructure homelab, designed to provide hands-on experience in security operations, vulnerability management, identity and access administration, system monitoring, and IT support.
 
-The environment was built in Oracle VirtualBox and includes a Windows Server domain controller, a domain-joined Windows workstation, and a Kali Linux system used to generate controlled security activity. Splunk Enterprise provides centralized log collection and analysis, with Windows event logs and Sysmon telemetry forwarded from the workstation.
+Built using Oracle VirtualBox, the environment includes Windows Server, domain-joined Windows workstations, Kali Linux, Ubuntu Server, and additional Linux systems used for security testing and vulnerability assessment. Splunk Enterprise provides centralized security monitoring, while tools such as Sysmon, Wireshark, GreenBone/OpenVAS, and osTicket support specialized security and IT administration workflows.
 
-I use this environment to simulate security events, investigate endpoint and network telemetry, develop SPL detections, and validate alerting workflows.
+I use this environment to simulate security events, investigate system and network activity, develop and validate detections, assess and remediate vulnerabilities, manage access controls, and practice structured IT service management. Projects emphasize practical implementation, troubleshooting, technical documentation, and validation of results.
 
 ## Lab Architecture
 
