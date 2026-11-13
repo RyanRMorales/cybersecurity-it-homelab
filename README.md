@@ -103,6 +103,22 @@ Detections developed and validated within the environment include:
 
 Each detection is tested using controlled activity, investigated in Splunk, refined using relevant event fields and thresholds, and configured as a scheduled alert for continued monitoring.
 
+## Vulnerability Assessment & Remediation
+
+SCAN01 serves as the vulnerability assessment system within the lab, running Greenbone/OpenVAS through Docker containers to identify and evaluate security weaknesses across the environment.
+
+VULN01 serves as a simulated legacy Linux server, providing an intentionally vulnerable system for conducting controlled security assessments and practicing remediation procedures.
+
+Vulnerability management activities performed within the environment include: 
+
+- Conducting vulnerability scans using Greenbone/OpenVAS to identify outdated services, insecure configurations, and known security weaknesses
+- Evaluating and prioritizing findings using Common Vulnerability Scoring System (CVSS) severity ratings
+- Investigating identified vulnerabilities and implementing corrective actions to reduce security exposure
+- Performing post-remediation validation scans to evaluate the effectiveness of applied fixes
+- Documenting vulnerability findings, remediation actions, validation results, and remaining security risks
+
+These activities provide hands-on experience with the vulnerability lifecycle, from vulnerability identification and risk prioritization through remediation, validation, and technical reporting.
+
 ## Completed Security Projects
 
 The following projects were developed within this homelab to practice security monitoring, investigation, detection engineering, and alert validation using realistic Windows and Sysmon telemetry.
