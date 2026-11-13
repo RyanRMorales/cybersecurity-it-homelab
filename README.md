@@ -10,7 +10,7 @@ I use this environment to simulate security events, investigate system and netwo
 
 ## Lab Architecture
 
-![Active Directory and Splunk Homelab Architecture](homelab-architecture.png)
+![Cybersecurity & IT Homelab Architecture](homelab-architecture.png)
 
 ## Lab Environment
 
