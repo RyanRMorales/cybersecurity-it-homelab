@@ -103,6 +103,23 @@ Detections developed and validated within the environment include:
 
 Each detection is tested using controlled activity, investigated in Splunk, refined using relevant event fields and thresholds, and configured as a scheduled alert for continued monitoring.
 
+## Network Traffic Analysis 
+
+WS01 serves as the primary network traffic analysis system within the lab, using Wireshark to capture and examine network communication between Windows and Linux virtual machines.
+
+Packet analysis is performed to investigate network protocols, validate connectivity, and understand how systems exchange data within the simulated enterprise environment.
+
+Network traffic analyzed within the environment includes:
+
+- TCP three-way handshakes and connection establishment between systems
+- Splunk Universal Forwarder communication with Splunk Enterprise over TCP port 9997
+- ICMP echo requests and replies used to validate network connectivity
+- ARP traffic used to observe local network address resolution
+- DNS queries and responses used to investigate name resolution
+- TCP SYN traffic associated with connection attempts to port 80
+
+These activities provide hands-on experience with packet-level network analysis, protocol identification, connectivity troubleshooting, and technical documentation of observed network behavior.
+
 ## Vulnerability Assessment & Remediation
 
 SCAN01 serves as the vulnerability assessment system within the lab, running Greenbone/OpenVAS through Docker containers to identify and evaluate security weaknesses across the environment.
