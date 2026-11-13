@@ -136,6 +136,22 @@ Vulnerability management activities performed within the environment include:
 
 These activities provide hands-on experience with the vulnerability lifecycle, from vulnerability identification and risk prioritization through remediation, validation, and technical reporting.
 
+## IT Service Desk & Ticket Management
+
+HELP01 serves as the IT service desk system within the lab, running Ubuntu Server and hosting osTicket to support simulated enterprise IT operations.
+
+The ticketing environment is configured to organize support requests, manage technician access, and establish structured workflows for documenting and resolving technical issues.
+
+IT service management components configured within the environment include:
+
+- Deployment and configuration of the osTicket ticketing platform
+- Creation of support departments and agent accounts
+- Configuration of agent roles and permissions for access mangement
+- Organization of users and support requests through simulated enterprise organizations
+- Preparation of ticket management workflows for incident tracking and technical support
+
+This environment provides the foundation for practicing the IT support lifecycle, including ticket creation, issue investigation, troubleshooting, resolution documentation, and ticket closure as the project progresses. 
+
 ## Completed Security Projects
 
 The following projects were developed within this homelab to practice security monitoring, investigation, detection engineering, and alert validation using realistic Windows and Sysmon telemetry.
