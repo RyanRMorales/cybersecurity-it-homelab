@@ -206,12 +206,13 @@ Implemented firewall access restrictions, replaced default administrative creden
 
 - **SIEM / Log Analysis:** Splunk Enterprise, Splunk Universal Forwarder, SPL
 - **Endpoint Telemetry:** Sysmon, Windows Event Logs, Windows Defender Firewall
-- **Operating Systems:** Windows Server 2025, Windows 10 Pro, Kali Linux, Ubuntu Linux
-- **Identity & Administration:** Active Directory Domain Services, DNS, Group Policy
+- **Operating Systems:** Windows Server 2025, Windows 10 Pro, Kali Linux, Ubuntu Desktop, Ubuntu Server
+- **Identity & Administration:** Active Directory Domain Services, DNS, Group Policy, User and Group Management 
 - **Security Testing:** Nmap, SMB, PowerShell, Netcat
 - **Network Traffic Analysis:** Wireshark, TCP/IP, DNS, ICMP
 - **Vulnerability Management:** Greenbone/OpenVAS, CVSS, Vulnerability Scanning and Validation
-- **Linux Security & Administration:** iptables, SSH, Service Configuration, Process and Port Inspection
+- **Linux Security & Administration:** iptables, SSH, UFW, Service Configuration, Process and Port Inspection
+- **IT Service Management:** osTicket, Ticket Management, Role-Based Access Control, Service Desk Workflows
 - **Containers & Virtualization:** Docker, Docker Compose, Oracle VirtualBox
 
 ## Skills Demonstrated
@@ -220,29 +221,33 @@ Implemented firewall access restrictions, replaced default administrative creden
 - SPL query development, security dashboards, and alert configuration
 - Detection and investigation of suspicious PowerShell activity, failed authentication attempts, and network reconnaissance
 - Windows Event Log analysis and endpoint monitoring using Sysmon
-- Active Directory administration, user management, and Group Policy configuration
+- Active Directory administration, user and group management, and Group Policy Configuration
 - Network traffic capture and protocol analysis using Wireshark
 - TCP/IP troubleshooting and interpretation of DNS, ARP, ICMP, and TCP communications
 - Vulnerability scanning and assessment using Greenbone/OpenVAS
-- CVSS-based vulnerability risk assessment and remediation prioritization
+- CVSS-based vulnerability risk assessment, severity evaluation, and remediation prioritization
 - Linux system administration, service management, and firewall access control
 - Security remediation through credential replacement, service deactivation, and network access restrictions
 - Post-remediation validation using connectivity testing, authentication verification, and host-level inspection
 - Vulnerability documentation, technical reporting, and residual risk assessment
+- IT service desk platform deployment and configuration using osTicket
+- Support department administration, agent account management, and role-based access control
+- IT ticketing workflow preparation and service desk organization
 - Virtual machine deployment, isolated network configuration, and Docker-based service deployment
 
 ## Future Development
 
-This homelab will continue to evolve as I develop additional security monitoring, detection, and investigation capabilities.
+This homelab will continue to evolve as I expand my hands-on experience in cybersecurity operations, IT infrastructure, vulnerability management, cloud security, and governance, risk, and compliance (GRC).
 
-Planned improvements include:
+Planned improvements and future projects include:
 
-- Expanding detection coverage for additional Windows and network-based threats
-- Developing more advanced attack simulations and multi-stage detection scenarios
+- Completing the IT help desk simulation through ticket lifecycle testing, workstation troubleshooting, incident resolution, and technical support documentation
+- Building a Microsoft Azure cloud environment to practice cloud infrastructure deployment, Microsoft Entra ID administration, role-based access control (RBAC), and cloud security monitoring 
+- Conducting a structured security risk and compliance assessment using the NIST Cybersecurity Framework (CSF) 2.0, including security control evaluation, gap analysis, risk documentation, and remediation planning
+- Expanding detection coverage for additional Windows and network-based threats 
 - Expanding security telemetry and data sources available within Splunk
 - Correlating network packet analysis with SIEM telemetry during security investigations
-- Expanding the homelab with IT support and help desk workflows, including a self-hosted ticketing system
-- Continuing to improve SOC investigation, alert triage, and incident analysis workflows
+- Continuing to improve SOC investigation, alert triage, incident analysis, and technical documentation workflows
 
 ## Lab Scope
 
